@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <img class="logo" src="/img/Logo.png" alt="Logo de Alura">
+    </header>
+    
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <!-- Área de entrada de texto -->
+            <textarea class="text-area" placeholder="Ingrese el texto aquí" cols="20" rows="10"></textarea>
+            <div>
+                <!-- Información adicional -->
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                <!-- Botones para encriptar y desencriptar -->
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Área donde se mostrará el mensaje encriptado/desencriptado -->
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <!-- Botón para copiar el mensaje al portapapeles -->
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Daniel Muñoz - 2024</p>
+    </footer>
+
+    <!-- Enlace al script JS -->
+    <script src="/script.js"></script>
+</body>
+</html>
